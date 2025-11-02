@@ -1,0 +1,30 @@
+﻿
+@model IEnumerable< Website1.Models.Class1>
+
+<html>
+
+<head>
+    <title>.net platform</title>
+</head>
+<body>
+    @{
+        foreach(var item in Model)
+        {
+            <h1>NAME: @item.Name</h1>
+            <h1>AGE: @item.Age</h1>
+            <h1>ID:@item.Id</h1>
+        }
+        
+        
+    }
+    <input type="button"asp-controller="Home" asp-action="about" value="About"/>
+    <a asp-controller="Home" asp-action="about" value="About">ABOUT</a>
+    <h1>Enter your details  for login </h1>
+    <img src="~/Images/elon.jpg" alt="error" />
+
+    <h1>@TempData.Peek("Company name") It is my Fav company </h1>
+
+
+</body>
+
+</html>

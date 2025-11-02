@@ -1,0 +1,29 @@
+﻿@model (Website1.Models.Class1,Website1.Models.Emp)
+<html>
+
+<head>
+    <title>.net platform</title>
+</head>
+<body>
+    <a asp-controller="Home" asp-action="index" >INDEX</a>
+    <h1>You have successfully registered </h1>
+<img src="~/Images/elon.jpg" alt="error" />
+    
+
+<div>
+    <h1>USER VALUE</h1>
+    <h3>@Model.Item1.Name</h3>
+    <h3 >@Model.Item1.Age</h3>
+    <h3>@Model.Item1.Id</h3>
+        <h1>EMPLOYEE VALUE</h1>
+        <h3>@Model.Item2.Ename</h3>
+        <h3>@Model.Item2.Eage</h3>
+        <h3>@Model.Item2.EId</h3>
+
+
+</div>
+
+
+</body>
+
+</html>
